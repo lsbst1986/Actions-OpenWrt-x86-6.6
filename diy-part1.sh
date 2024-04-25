@@ -18,17 +18,17 @@ echo "src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall-pa
 echo "src-git passwall https://github.com/xiaorouji/openwrt-passwall.git;main" >> "feeds.conf.default"
 echo "src-git istore https://github.com/linkease/istore;main" >> "feeds.conf.default"
 
-cat>delete.sh<<-\EOF
-#!/bin/bash
-rm -rf  bin/targets/x86/64/config.buildinfo
-rm -rf  bin/targets/x86/64/feeds.buildinfo
-rm -rf  bin/targets/x86/64/openwrt-x86-64-generic-kernel.bin
-rm -rf  bin/targets/x86/64/openwrt-x86-64-generic-squashfs-combined-efi.vmdk
-rm -rf  bin/targets/x86/64/openwrt-x86-64-generic-squashfs-combined.vmdk
-rm -rf  bin/targets/x86/64/openwrt-x86-64-generic-squashfs-rootfs.img.gz
-rm -rf  bin/targets/x86/64/openwrt-x86-64-generic.manifest
-rm -rf  bin/targets/x86/64/openwrt-x86-64-generic-squashfs-combined.img.gz
-rm -rf bin/targets/x86/64/sha256sums
-rm -rf  bin/targets/x86/64/version.buildinfo
-exit 0
-EOF
+#cat>delete.sh<<-\EOF
+##!/bin/bash
+#rm -rf  bin/targets/x86/64/config.buildinfo
+#rm -rf  bin/targets/x86/64/feeds.buildinfo
+#rm -rf  bin/targets/x86/64/openwrt-x86-64-generic-kernel.bin
+#rm -rf  bin/targets/x86/64/openwrt-x86-64-generic-squashfs-combined-efi.vmdk
+#rm -rf  bin/targets/x86/64/openwrt-x86-64-generic-squashfs-combined.vmdk
+#rm -rf  bin/targets/x86/64/openwrt-x86-64-generic-squashfs-rootfs.img.gz
+#rm -rf  bin/targets/x86/64/openwrt-x86-64-generic.manifest
+#rm -rf  bin/targets/x86/64/openwrt-x86-64-generic-squashfs-combined.img.gz
+#rm -rf bin/targets/x86/64/sha256sums
+#rm -rf  bin/targets/x86/64/version.buildinfo
+#exit 0
+#EOF
