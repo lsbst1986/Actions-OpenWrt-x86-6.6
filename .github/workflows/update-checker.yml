@@ -21,14 +21,14 @@ env:
   REPO_PATH_HelloWorld : "helloworld"
 
   REPO_URL_PassWall: https://github.com/xiaorouji/openwrt-passwall
-  REPO_BRANCH_PassWall: packages
+  REPO_BRANCH_PassWall: main
   REPO_PATH_PassWall : "openwrt-passwall"
 
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: 0 0 1 * 1
+    - cron: 0 8 * * *
 
 jobs:
   check:
@@ -90,7 +90,7 @@ jobs:
         event-type: Source Code Update
 
     #- name: Delete workflow runs
-      #uses: lsbst1986/delete-workflow-runs@main
+      #uses: Lenyu2020/delete-workflow-runs@main
       #with:
         #retain_days: 1
         #keep_minimum_runs: 1
