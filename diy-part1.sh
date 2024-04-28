@@ -27,7 +27,6 @@ rm -rf  bin/targets/x86/64/openwrt-x86-64-generic-squashfs-combined-efi.vmdk
 rm -rf  bin/targets/x86/64/openwrt-x86-64-generic-squashfs-combined.vmdk
 rm -rf  bin/targets/x86/64/openwrt-x86-64-generic-squashfs-rootfs.img.gz
 rm -rf  bin/targets/x86/64/openwrt-x86-64-generic.manifest
-rm -rf  bin/targets/x86/64/openwrt-x86-64-generic-squashfs-combined.img.gz
 rm -rf bin/targets/x86/64/sha256sums
 rm -rf  bin/targets/x86/64/version.buildinfo
 exit 0
