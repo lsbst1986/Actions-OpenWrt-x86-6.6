@@ -28,7 +28,7 @@ on:
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
-  FEEDS_CONF: feeds.conf.default
+  FEEDS_CONF: feeds.conf.different
   CONFIG_FILE: .diffconfig
   DIY_P1_SH: diy-part1.sh
   DIY_P2_SH: diy-part2.sh
@@ -109,10 +109,10 @@ jobs:
     #    git pull --depth 1 origin master
     #    git branch --set-upstream-to=origin/master 
     
-    #- name: luci-theme-argonn
-      #run: |
-        #cd openwrt/package 		
-        #git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git luci-theme-argonn
+    - name: luci-theme-argonn
+      run: |
+        cd openwrt/package 		
+        git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git luci-theme-argonn
         
     #- name: luci-app-unblockneteasemusic
       #run: |
